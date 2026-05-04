@@ -1,0 +1,12 @@
+<h1>Nuestros productos</h1>
+
+<section class="articulos">
+    @for ( producto of productos; track producto.id ) {
+        <article class="articulo">
+            <img src="{{ producto.image }}" alt="{{ producto.name }}">
+            <h2>{{ producto.name }}</h2>
+            <p>{{ producto.description }}</p>
+            <strong>${{ producto.price}}</strong>
+        </article>
+    }
+</section>

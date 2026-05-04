@@ -1,0 +1,21 @@
+header{
+    background-color: black;
+    padding: 20px;
+}
+header nav{
+    background-color: black;
+}
+nav a {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px;
+    font-size: 18px;
+    transition: all 0.2s ease-in-out;
+}
+nav a:hover {
+    background-color: #17ae8e;
+    /* color: black; */
+    border-radius: 15px;
+}
