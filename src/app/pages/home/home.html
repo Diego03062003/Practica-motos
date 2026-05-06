@@ -4,16 +4,19 @@
 <h1>Best motos models</h1>
 <img src="/IMG/moto7.jpg" alt="Moto 5" class="moto-image">
 
-<section class="carrusel">
+
+<swiper-container slides-per-view="4" loop="true" autoplay="true" speed="500">
     @for ( producto of productos; track producto.id ) {
-        <div class="product-card">
-            <img [src]="producto.image" alt="{{ producto.name }}" class="product-image">
-            <h2>{{ producto.name }}</h2>
-            <p>{{ producto.description }}</p>
-            <p class="price">${{ producto.price }}</p>
-        </div>
+        <swiper-slide>
+            <div class="product-card">
+                <img [src]="producto.image" alt="{{ producto.name }}" class="product-image">
+                <h2>{{ producto.name }}</h2>
+            </div>
+        </swiper-slide>
+        
     }
-</section>
+</swiper-container>
+
 
 
 
